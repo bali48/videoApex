@@ -7,18 +7,17 @@
  *
  */
 
+/* Make all variables from our .env file available in our process */
+require('dotenv').config();
 const express    = require('express');
 const bodyParser = require('body-parser');
 const session    = require('express-session');
 const cors       = require('cors');
 const models     = require('./models');
 
-/* Make all variables from our .env file available in our process */
-require('dotenv').config();
 
 /* Init express */
 const app = express();
-
 /* Here we setup the middlewares & configs */
 
 app.use(cors());
