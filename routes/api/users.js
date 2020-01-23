@@ -14,6 +14,7 @@ const auth        = require('../auth');
 const generateJWT = require('../../utils/generateJWT');
 const User        = require('../../models').User;
 
+
 const userSchema = Joi.object().keys({
 	username: Joi.string().alphanum().min(3).max(30).optional(),
 	password: Joi.string().required(),
@@ -21,7 +22,7 @@ const userSchema = Joi.object().keys({
 	name: Joi.string().alphanum().min(2).max(100).optional(),
 	surname: Joi.string().alphanum().min(2).max(100).optional()
 });
-
+router.get('/', )
 /* POST login route */
 router.post('/login', auth.optional, (req, res, next) => {
 	const { body: { user } } = req;

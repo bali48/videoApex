@@ -27,7 +27,8 @@
     "sequelize-cli": "^5.4.0",
     "sqlite3": "^4.0.6",
     "supertest": "^4.0.2",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "youtube-dl": "^3.0.1"
   },
   "devDependencies": {
     "code": "^5.2.4",
